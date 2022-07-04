@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>yiruo</artifactId>
+        <groupId>com.yiruo</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>yiruo-activiti</artifactId>
+
+    <description>
+        流程管理
+    </description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-spring-boot-starter</artifactId>
+            <version>7.0.0.SR1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.mybatis</groupId>
+                    <artifactId>mybatis</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-json-converter</artifactId>
+            <version>7.0.0.SR1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-image-generator</artifactId>
+            <version>7.0.0.SR1</version>
+        </dependency>
+
+        <!-- 通用工具-->
+        <dependency>
+            <groupId>com.yiruo</groupId>
+            <artifactId>yiruo-common</artifactId>
+        </dependency>
+
+        <!-- 认证-->
+        <dependency>
+            <groupId>com.yiruo</groupId>
+            <artifactId>yiruo-framework</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>
